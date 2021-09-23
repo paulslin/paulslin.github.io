@@ -22,7 +22,7 @@
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/handwriting_thumbnail.PNG?raw=true"></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/handwriting_flow.PNG?raw=true"></p>
 
-## <a href="/pdf/celltower_presentation.pdf"> Celltower Navigation </a>
+## <a href="/pdf/celltower_presentation.pdf"> Cell Service Navigation </a>
 ---
 **Description:** Given datasets on the watershed, elevation, land class, and cell signal of a mountain range in Maine, recommend a path for the late-morning hiker to go to obtain better cell phone reception.
 
