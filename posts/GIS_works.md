@@ -22,15 +22,15 @@
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/handwriting_thumbnail.PNG?raw=true"></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/handwriting_flow.PNG?raw=true"></p>
 
-## <a href="/pdf/celltower_presentation.pdf"> Helicopter Site Suitability </a>
+## <a href="/pdf/celltower_presentation.pdf"> Celltower Navigation </a>
 ---
-**Description:** Given datasets on the roads, bodies of water, electrical power grids, and topography of Northern Morocco, indicate the relative site suitability from 1 (worst) to 10 (best) for a new medical helicopter base to minimize base-to-patient-to-hospital flight distances.
+**Description:** Given datasets on the watershed, elevation, land class, and cell signal of a mountain range in Maine, recommend a path for the late-morning hiker to go to obtain better cell phone reception.
 
-**Main Topics:** <i> Local Functions, Cell Statistics, Map Algebra </i>
+**Main Topics:** <i> Surface, Distance (Euclidian) </i>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/celltower_thumbnail.PNG?raw=true"></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/celltower_flow.PNG?raw=true"></p>
 
-## <a href="/pdf/traffic_presentation.pdf"> Helicopter Site Suitability </a>
+## <a href="/pdf/traffic_presentation.pdf"> Traffic Control Manipulation </a>
 ---
 **Description:**  At the annual fair in New Haven, Pepe and Sally's shop in the town square typically gets the most attention.  A recent chemical spill presents an opportunity to alter the travel time, traffic control, and access to the town square.  Report the spill as having happened at 1) the door, 2) a bit closer to the corner, or 3) around the rear of the building to reduce the traffic to Pepe and Sally's shop.
 
