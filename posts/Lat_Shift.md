@@ -82,6 +82,27 @@ A continuous, smoothed NDVI time series between 2011 and 2020 was generated for 
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/ETL_Pipeline.PNG?raw=true"></p>
 <p align = "center"><i>Pipeline procedure for obtaining site PFT prediction with input (raw NDVI time-serise) and output (PFT prediction)</i></p>
 
+## Results
+Testing sites were partitioned into three non-overlapping subsets: central subset (testing sites in Central Transect), east subset (testing sites in East Transect), west subset (testing sites in West Transect). Additionally, the all subset was created to include testing sites from all three transects. Each subset was then subdivided into two sub-subsets: 1) all subset testing sites classified as C3-majority by the learned model; 2) all subset testing sites classified as C4-majority by the learned model. In summary, testing sites were divided into four subsets (central, east, west, all) and eight sub-subsets (a C3 and C4 sub-subset for each of the four subsets).
+
+Three PFT distribution attributes (count, mean latitude, and median latitude) were calculated for each sub-subset. The count attribute was calculated by counting the number of testing sites within the sub-subset. The mean and median latitude attribute were calculated by taking the mean and median values of the latitude values of testing sites within the sub-subset, essentially the centroid latitude of the sub-subsets. Pearson's Correlation tests were then calculated between each sub-subset’s PFT distribution attribute and time, yearly transect temperature, and yearly transect precipitation for a total of nine regressions tests per sub-subset.
+
+#### PFT Distribution
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/yearly_trans.gif?raw=true"></p>
+<p align = "center"><i>PFT spatiotemporal distribution (blue: C3, red: C4) at the Great Plains between 2010 and 2020.</i></p>
+
+#### PFT Distribution vs Year
+- **East Transect**: Regression correlations between time and the count of the East Transect C3 sub-subset yielded a p-value of 0.001, R2 value of -0.847, and slope of -3.809, suggesting the number of sites classified as C4-majority along the East Transect increased at the expense of the number of sites classified as C3-majority at a rate of 3.809 sites per year. Mean latitude yielded a p-value of 0.002, R2 of 0.827, and slope of 0.237, indicating that the centroid of testing sites classified as C3 shifted northward at a rate of 0.237  to 0.541 degrees latitude per year. Altogether, the simultaneous patterns at the East Transect of 1) a decrease in count of sites classified as C3-majority and 2) an increase in the centroid latitudinal value of sites classified as C3-majority suggest a northward shift of the southern boundary of the C3 territory at the East Transect. Such conclusions are supported by the figure above, which show the sites at the southern East Transect, which were mostly classified as C3-majority (blue) in 2010, gradually and consistently shifting to the C4-majority classification over the years.
+- **Central and West Transect**: At the Central Transect, regression correlations were all statistically insignificant and mostly yielded p-values greater than 0.50.  In particular, there appeared to be no discernable trends in the changes in PFT distribution.
+- **West Transect**: Similar to the Central Transect, regression correlations at the Western Transect were all statistically insignificant.  Here, changes in PFT distribution appeared relatively stable.
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/PFT_Distribution_Tables.PNG?raw=true"></p>
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/PFT_Distribution_Chart.PNG?raw=true"></p>
+<p align = "center"><i>Regression correlation and scatter plot (blue: C3, red: C4) of Year vs PFT attributes</i></p>
+
+#### PFT Distribution vs Environmental Factors
+Temperature and precipitation generally did not correlate with the PFT distribution attributes. Across all transects and the aggregate of all transects, correlation regression between PFT attributes and temperature and precipitation variability mostly yielded p-values greater than 0.05. The one exception occurred at the West Transect between Median Latitude of C4 and Precipitation, which yielded a p-value of 0.021, a R2 value of -0.681, and a slope of -0.00684. A slope of -0.00684 indicates that for every additional 1mm of precipitation in the West Transect, the centroid of the C4 testing sites shifts south by 0.00684 degrees latitude.
+
+
 
 
 
