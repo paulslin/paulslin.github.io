@@ -1,7 +1,7 @@
 # Portfolio
 ---
 ## Data Science and Machine Learning
-### [Latitudinal Shifts of Plant Functional Types within the Great Plains](/sample_page)
+### [Latitudinal Shifts of Plant Functional Types within the Great Plains](/posts/Lat_Shift.md)
 <center><img src="images/nlp.png"/></center>
 
 ### [Forecasting PM2.5 & AQI Values across U.S. Embassy Sites and EPA Regions](/sample_page)
