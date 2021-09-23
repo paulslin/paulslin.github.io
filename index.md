@@ -17,6 +17,6 @@
 ### [PennBook] (INSERT LINK HERE)
 
 ## GIS
-### [Selected GIS Works](/sample_page)
-<center><img src="images/nlp.png"/></center>
+### [Selected GIS Works](/posts/GIS_works.md)
+<p align = "center"><img src="images/GIS/election_thumbnail.PNG?raw=true"></p>
 
