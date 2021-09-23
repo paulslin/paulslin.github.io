@@ -24,13 +24,18 @@ Synergizing Python packages (cartopy, netCDF4, h5Py) and front-end web developme
 ## Main Features
 - **Erroneous Value Detection**
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/error_masking.PNG?raw=true"></p>
-- **Administrative & Physical Layer Overlays**<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/layering.PNG?raw=true"></p>
-- **Extended Features** <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/features.PNG?raw=true"></p>
+- **Administrative & Physical Layer Overlays**
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/layering.PNG?raw=true"></p>
+- **Extended Features**
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/features.PNG?raw=true"></p>
 
 ## Reporting Options
-- **Report by Day:** analyze error values of multiple fields across a given day<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/day_report.png?raw=true"></p> 
-- **Report by Field:** analyze error values of a single field across multiple days<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/field_report.png?raw=true"></p>
-- **Report by File:** analyze error values of multiple fields from multiple days across a single file <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/file_report.png?raw=true"></p>
+- **Report by Day:** analyze error values of multiple fields across a given day
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/day_report.png?raw=true"></p> 
+- **Report by Field:** analyze error values of a single field across multiple days
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/field_report.png?raw=true"></p>
+- **Report by File:** analyze error values of multiple fields from multiple days across a single file
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/file_report.png?raw=true"></p>
 
 ## Discussion
 -- 
