@@ -1,6 +1,13 @@
 @import "fonts";
 @import "rouge-github";
 
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
 body {
   background-color: #fff;
   padding:50px;
