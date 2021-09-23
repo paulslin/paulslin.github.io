@@ -4,7 +4,7 @@
 
 **Date**: May 2021
 
-**Project Description** 
+**Project Description:** 
 Grass-based biomes are one of the most important ecosystems and provide numerous crucial functions and services, yet remain as one of the world’s most vulnerable ecosystems today. In particular, the distribution of Plant Functional Types (PFT) between C3 grasses and C4 grasses are expected to shift dramatically due to grass’ sensitivity to changes in environmental factors. Within this study, a set of twelve annual phenological metrics were extracted from the Normalized Difference Vegetation Index (NDVI) profiles along five training clusters and three testing latitudinal transects between 2010 and 2020. Phenological metric value measurements from the training sites were used as features to construct machine learning models for predicting site PFT classification (C3-majority or C4-majority). The resulting predictions were used to analyze potential shifts in the spatiotemporal distribution of grass PFTs and its correlations with temperature and precipitation changes within the North American Great Plains. 
 
 ## Introduction
