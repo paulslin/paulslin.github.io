@@ -1,5 +1,5 @@
 # Latitudinal Shifts of Plant Functional Types within the Great Plains
-**Author**: Paul Lin (Mentor: Brent Helliker, Jane Dmochowski - University of Pennsylvania)
+**Author**: Paul Lin (Mentors: Brent Helliker & Jane Dmochowski - University of Pennsylvania)
 
 **Date**: May 2021
 
