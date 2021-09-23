@@ -30,14 +30,6 @@
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/celltower_thumbnail.PNG?raw=true"></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/celltower_flow.PNG?raw=true"></p>
 
-## <a href="/pdf/helicopter_presentation.pdf"> Cell Service Navigation </a>
----
-**Description:** Given datasets on the watershed, elevation, land class, and cell signal of a mountain range in Maine, recommend a path for the late-morning hiker to go to obtain better cell phone reception.
-
-**Main Topics:** <i> Surface, Distance (Euclidian) </i>
-<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/helicopter_thumbnail.PNG?raw=true"></p>
-<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/helicopter_flow.PNG?raw=true"></p>
-
 ## <a href="/pdf/traffic_presentation.pdf"> Helicopter Site Suitability </a>
 ---
 **Description:**  At the annual fair in New Haven, Pepe and Sally's shop in the town square typically gets the most attention.  A recent chemical spill presents an opportunity to alter the travel time, traffic control, and access to the town square.  Report the spill as having happened at 1) the door, 2) a bit closer to the corner, or 3) around the rear of the building to reduce the traffic to Pepe and Sally's shop.
