@@ -50,6 +50,6 @@
 ---
 **Description:** Given the voting patterns and demographic characteristics of Pennsylvania's 2018 gubernatorial elections, determine which features are able to best predict recent voting sentiments.
 
-**Main Topics:** <i> Local Functions, Cell Statistics, Map Algebra </i>
+**Main Topics:** <i> Interpolation, Density, Classification </i>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/election_thumbnail.PNG?raw=true"></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/GIS/election_flow.PNG?raw=true"></p>
