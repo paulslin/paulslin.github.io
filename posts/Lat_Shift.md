@@ -1,4 +1,5 @@
 # Latitudinal Shifts of Plant Functional Types within the Great Plains
+---
 **Author**: Paul Lin (Mentors: Brent Helliker & Jane Dmochowski - University of Pennsylvania)
 
 **Date**: May 2021
@@ -14,6 +15,7 @@ Grasses and grass-based biomes play crucial roles in ecological functions and hu
 Past methods for analyzing PFT distribution have typically utilized field-collected measurements of carbon isotope concentration to classify sites as C3-majority or C4-majority. However, field-collected measurements are often constrained by high costs, infrequent and limited spatial coverage, and coarse temporal resolution. As such, PFT classification methods classification metrics derived from remotely-sensed measurements have become increasingly popular due to the low cost, regular and high spatial coverage, and fine temporal resolution produced by remotely-sensed measurements. One such method for site PFT classification is based on the asynchronous seasonal profiles between C3 and C4 plants in which C3 plants exhibit greater photosynthetic activity in the moist and cool spring and late fall while C4 plant exhibit greater photosynthetic activity in the dry and hot summer. Consequentially, C3-majority and C4-majority sites yield different ranges of values for temporal-based phenological metrics such as date of onset of greenness (season start), date of end of greenness (season end), date of maximum greenness, and duration of greenness (season length), all of which can be used for classification purposes. As such, this study will utilize these temporal-based metrics as features for building a site PFT classifier.
 
 ## Datasets
+---
 - **[National Ecological Network (NEON)](https://data.neonscience.org/data-products/DP1.10058.001)**: NEON product DP1.10058.001 (Plant Species Presence and Percent Cover) documents the existing plant species and their respective percent cover at multiple sample plots located within NEON Terrestrial Observations System (TOS) sites. NEON product DP1.10058.001 data were used in this study to prescribe PFT classification to training plots as C3-majority or C4-majority plots.
 - **[Moderation Resolution Imaging Spectroradiometer (MODIS)](https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD09Q1)**: MODIS surface reflectance data are collected from the Terra Surface Reflectance 8-Day Global 250m (MOD09Q1.006) dataset. In this study, MODIS surface reflectance data was collected from 2010 to 2020 at each training and testing plot on an 8-day interval. For training plots spanning multiple pixels, the average reflectance value of the pixels within the training plot’s boundaries was used instead. NDVI can be calculated from MODIS surface reflectance data as (Band1 – Band2) / (Band1 + Band2), with Band1 representing the near-infrared band and Band2 representing the red band.
 - **[Copernicus](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR)**: Within this study, precipitation and temperature data were collected from 2010 to 2020 at each testing plot on a daily interval from Copernicus’ ERA5 daily aggregate dataset.
@@ -22,6 +24,7 @@ Past methods for analyzing PFT distribution have typically utilized field-collec
 <p align = "center"><i>NLCD 2016 classification of the contiguous United States </i></p>
 
 ## Study Area
+---
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/Training_Testing_Sites.PNG?raw=true"></p>
 <p align = "center"><i>The Great Plains Ecoregion: Training Sites (left) and Testing Sites (right)</i></p>
 
@@ -37,12 +40,13 @@ Five NEON domains are associated with the Great Plains ecoregion: Prairie Penins
 Three latitudinal transects (East, Central, West) were drawn over the Great Plains ecoregion to serve as baselines for generating herbaceous testing sites. The East Transect occupies the Temperate Prairies ecoregion, a region characterized by high precipitation and tallgrass presence. The Central Transect and West Transect, drawn along the 100°W longitude and 104°W longitude respectively, occupy the Semiarid Prairies ecoregions, a region characterized by low precipitation and shortgrass presence. 400 preliminary sites were randomly generated along each transect and an NLCD herbaceous land cover mask was applied to filter out sites occupying non-herbaceous lands. From the pool of remaining preliminary sites, 100 herbaceous sites were randomly chosen along each transect as testing sites for a total of 300 testing sites.
 
 ## Data Preprocessing
-#### Plot PFT Classification
+---
+#### <a id="plot_classifification_anchor">Plot PFT Classification</a>
 Each DP1.10058.001 dataset was comprised of entries composed of plot id, year, NLCD class, species’ scientific name, and species percent cover. A PFT master list matching species scientific name to their corresponding PFT class was compiled from the TRY Plant Trait Database and other resources. The PFT of individual entries within the DP1.10058.001 dataset was then identified by joining the DP1.10058.001 dataset with the PFT master list based on the species’ scientific name. Finally, the sum of C3 percent cover and sum of C4 percent cover was calculated by aggregating and summing the percent cover values of entries sharing the same plot id, year, and PFT. For a given plot, if the sum of C3 percent cover was greater than the sum of C4 percent cover, the plot was classified as C3-majority. Otherwise, the plot was classified as C4-majority.
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/Relational_Schema.png?raw=true"></p>
 <p align = "center"><i>Relational Schema and Flow Diagram of plot PFT Classification processes: table indexes are indicated by italics, join attributes by blue text, and grouping attributes by red text</i></p>
   
-#### NDVI Time-Series
+#### <a id="NDVI_ts_anchor">NDVI Time-Series</a>
 The MOD09Q1.006 product data was used to construct a continuous NDVI time-series between 2010 and 2020 at each training plot. The maximum-value-composite (MVC) technique applied was found to be insufficiently comprehensive for removing the effects of cloud and aerosol contaminations on NDVI values. As such, two additional filters were applied to smooth the NDVI time-series: 1) a five-point median filter to reduce major cloud contamination effects; 2) a Savitzky-Golay filter to reduce minor atmospheric effects. The resulting time-series exhibited relative smoothness, so no additional smoothing techniques were applied. Finally, a linear interpolation technique was applied on the smoothed time-series to increase the time-series’ temporal resolution from one value per eight days to one value per day.
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/Time_Series.PNG?raw=true"></p>
 <p align = "center"><i>Sample raw and smoothed NDVI time-series over 10-years (left) and 1-year (right) timeframe</i></p>
@@ -52,6 +56,32 @@ A set of twelve phenological metrics were identified by Reed and et al. to be ex
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/Phenological_Metrics_Table.png?raw=true"></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/Phenological_Metrics_Graph.png?raw=true"></p>
 <p align = "center"><i>Phenological metrics extracted from NDVI time series identified by Reed et al. (1994)</i></p>
+
+## Modelling
+---
+#### Model Inputs
+Training data was created by joining the plot PFT classification data and the plot phenological features data based on the plot id and year keys (see <a href="#plot_classifification_anchor">Plot PFT Classification</a>). The resulting entries were comprised of three components:
+- an identifier (plot id and year)
+- a PFT label (isC3 or isC4)
+- a set of features (the 12 phenological metrics)
+
+#### Model Selection
+A series of steps and comparisons were undertaken to determine the model's optimal base classifier. First, training data was split into 67% input data and 33% validation data.  Since the input dataset contained more C3-majority plots than C4-majority plots, three sets of sampling techniques were performed over the input data: 1) no sampling techniques; 2) oversampling; 3) under-sampling. Oversampling and undersampling techniques were applied to the input data to generate oversampling input data and undersampling input data. Six model types were considered as potential base classifiers for the learned model: 1) Logistic Regression (LR); 2) Support Vector Machines (SVM); 3) K-Nearest Neighbors (k-NN); 4) Random Forest (RF); 5) Adaboost (ADA); 6): Gradient Boost (GBM). Each of the six base classifiers were then built three times (once from input data, oversampling input data, and undersampling input data each) then evaluated with the validation data.
+
+Across all sampling techniques, the RF, ADA, GBM models demonstrated the highest classification accuracy.  Models built on the input data – particularly Logistic Regression and Support Vector Machine – yielded high classification accuracy by maintaining a high preference towards the C3 class. Such a result was unsurprising, given the imbalance class distribution within the input data.  Since the input data was comprised of 67% C3-majority sites and 33% C4-majority sites, models built on the input data could simply always predict C3-majoirty and still be correct 67% of the time. As a result, these models generated high numbers of false positive among the C4-majority inputs and frequently classified C4-majority sites as C3-majority due to their preference for the C3-majority class. The oversampling technique was utilized to alleviate class imbalance and reduce the models’ preferences for the majority (C3) class. In each model instance, the number of false positives among the C4 inputs were lower in models built on the oversampling input data than models built on the input data. For example, the number false positives among the C4 inputs decreased from 37, 35, 36 to 30, 30, 29 amongst the RF, ADA, and GBM models, from 50 to 31 for the LR model, and from 54 to 30 for the SVM model. Moreover, the reduction of C4 false positives was achieved while maintaining classification accuracy comparable to models built on input data.  Within this study, since both classes are equally important, the F1 and PR-AUC Curve can be used to determine the best performing classifier.
+
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/Confusion_Matrix.PNG?raw=true"></p>
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/Metrics.PNG?raw=true"></p>
+<p align = "center"><i>Confusion matrix and metrics of no sampling (left), oversampling (center), and undersampling (right) techniques</i></p>
+
+#### Model Tuning
+Since models built on the oversampling input data and the RF, ADA, and GBM base classifiers performed the best, the base classifiers were chosen to be RF, ADA, and GBM while the sampling technique was chosen to be the oversampling technique. Hyperparameter tuning was performed on each of the base classifiers based on a 5-fold cross-validation. Each of the tuned model demonstrated an improvement in classification accuracy compared to their non-tuned counterparts. Finally, the learned model was built as an ensemble, majority-voting classifier comprised of the tuned RF base classifier, tuned ADA base classifier, and tuned GBM classifier. That is, for each set of features inputted into the learned model, three base classifiers each independently generated a PFT prediction and the final prediction of the learned model was then outputted as the majority value of the three predictions.
+
+#### Model Predictions
+A continuous, smoothed NDVI time series between 2011 and 2020 was generated for each testing site following the steps outlined in <a href="#NDVI_ts_anchor">NDVI Time-Series</a>. Afterwards, annual values for the set of phenological metrics were extracted from the smoothed NDVI time-series at each testing site and inputted into the ensemble learned model to obtain a PFT prediction for a given site and year.
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/ETL_Pipeline.PNG?raw=true"></p>
+<p align = "center"><i>Pipeline procedure for obtaining site PFT prediction with input (raw NDVI time-serise) and output (PFT prediction)</i></p>
+
 
 
 
