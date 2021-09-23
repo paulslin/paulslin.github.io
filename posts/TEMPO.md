@@ -38,7 +38,7 @@ Synergizing Python packages (cartopy, netCDF4, h5Py) and front-end web developme
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/file_report.png?raw=true"></p>
 
 ## Discussion
--- 
+---
 Although TEMPO was originally intended as an operations-oriented service to identify errors in data ingestion and transformation, the GMAO team recognized the potential of TEMPO's application for climate modelling and analysis purposes. Due to TEMPO's capabilities for identifying data outliers, TEMPO is particularly useful for identifying extreme weather events. For example, after analyzing several Earth Science datasets, TEMPO identified a range breach for horizontal wind velocity (u-wind) and ozone levels that indicated unusually strong high Polar Westerly zonal wind velocity for July 22, 2019.
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/polar_event.PNG?raw=true"></p>
 Such strong velocities allow the Antarctic polar vortexes to trap more cold air, thereby encouraging ice crystals and polar stratospheric cloud formations. As winter transitions into springs, the polar vortex will weaken and induce chemical reactions from within clouds to produce chlorine, the primary catalyst for ozone depletion. TEMPO’s identification of the strong Polar westerly alerts for special attention for analyzing Ozone levels in the upcoming Southern Hemisphere’s spring season. Such is just one example of TEMPO's capability to detect unusual environmental phenomena, as well as potential operational errors. With further development, TEMPO seeks to investigate the spatial, temporal, and seasonal aspects of GEOS data, as well as develop an alert system for reporting erroneous data.
