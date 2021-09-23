@@ -27,7 +27,6 @@ The Friends page is based off of the current Facebook friends page. Users can vi
 ## Chat
 ---
 The Chat page is built on socket.io and modeled after the Facebook Messenger system. On the left side, users can see the lists of chats, which will dynamically update if a new message is received/unread. On the right-hand side, users can select chats to send and receive messages within them. Both 1-1 and group chats are supported by the chat page, as well as bolding unread messages, editing chat names, adding new users, and leaving group chats. If users are browsing on other pages, messages from friends will result in real-time notifications appearing.
-<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/PennBook/chat.PNG?raw=true"></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/PennBook/chat2.png?raw=true"></p>
 
 ## Newsfeed
