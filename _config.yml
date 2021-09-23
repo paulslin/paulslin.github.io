@@ -1,19 +1,18 @@
-title: <p align="center"> Chris Tran </p>
+title: <p align="center"> Paul Lin </p>
 
 logo: "/images/picture.png?raw=true"
 
 description:
   <p align="center">
-  <a href="pdf/resume.pdf">Resume</a> |
-  <a href="https://www.linkedin.com/in/chriskhanhtran/">LinkedIn</a> |
-  <a href="https://github.com/chriskhanhtran">GitHub</a>
+  <a href="pdf/Paul_Lin_Resume.pdf">Resume</a> |
+  <a href="https://www.linkedin.com/in/paulslin/">LinkedIn</a> |
   </p>
   
   <p align="justify">
-  I am pursing MS degree in Business Analytics at Simon Business School, University of Rochester.
-  <br><br>
-  I am currently a Machine Learning Research Intern at Skim AI Technologies with a focus on NLP and Deep Learning research.
-  <br><br>
+  University of Pennsylvania <br><br>
+  Master of Science in Engineering in Computer and Information Science <br><br>
+  Certificate in Geographical information System & Spatial Analysis <br><br>
+  Graduation Date: December 2021
   </p>
   
 theme: jekyll-theme-minimal
