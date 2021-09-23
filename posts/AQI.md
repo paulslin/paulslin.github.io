@@ -81,11 +81,29 @@ To induce regularization, the hyperparameters of <i>n_estimators</i>, <i>max_dep
 
 ###### <i> Comparison with Standard Formula</i>
 A common method for calculating PM2.5 values from Merra2 data is given from the equation: `PM2.5 = DUSTMASS + SSSMASS25 + BCSMASS + 1.4*OCSMASS + 1.375SO4MASS` (Malm et al., 2011, Buchard et al., 2016). To compare our models' forecasting performance compared to the formula's forecasting perfomance, we aggregated the regional dataset results back into a pooled results dataset in order to calculate our metrics. Compared to both the predictions generated from the untuned/aggregated model from Model 1 and the predictions generated from the standard formula, our the predictions generated from our tuned regional models performed substantially better, yielding a pooled r2 validation score of 0.815, compared to the 0.690 of Model 1 and 0.375 of the standard formula. Moreover, our model reduced RMSE by eight-folds and percent error by three-folds when compared to the standard model. In particular, a time-series plotting of the observed, model prediction, and formula prediction showed that while the formula-based predictions often excessively overestimates the PM2.5 peak events, our model were able to capture the variations in PM2.5 distribution without overestimating.
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/AQI/model3_comparison.png?raw=true"></p>
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/AQI/model3_time_series.png?raw=true"></p>
+<p align = "center"><i>Average Daily PM2.5 values in blue (observed), model prediction (orange), and formula prediction (green)</i></p>
+
+###### <i> Comparison with Geographical Distribution </i>
+Afterwards, we sought to visualize the model performance with regards to geographic distribution. A map of the r2 score over the contiguous U.S. revealed that the models appeared to perform the best within the Pacific Northwest, Northern California, and the Middle Atlantic regions while performing the worst within the Midwest and Southeast regions. 
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/AQI/model3_geography.png?raw=true"></p>
+
+###### <i> Comparison with Temporal Distribution </i>
+Finally, we also sought to visualize the model performance with regards to temporal distribution. Box-and-Whisker plots of predicted-actual values across each season and hour demonstrated near-identical patterns, suggesting our model performed uniformly across seasons and hours.
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/AQI/model3_temporal.png?raw=true"></p>
 
 #### Model, Step 4: Site Cross-Validation Models
+We were also interested in observing the models' capabilities toe generalize and predict for sites that have not been observed. As such, for each region, sites were split into 10 distinct subsets and a 10-fold cross validation was performed within each region. That is, for each region, ten models were created, with 90% of the sites serving as training data and the remaining 10% of the sites as validation data for a singular model. After aggregating the results of all region’s models, a map distribution of the r2 score demonstrated near identical distribution to model predictions without cross-validation from Model 3, thereby suggesting that the models were capable of generalize to new sites within their region.
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/AQI/model4_geography.png?raw=true"></p>
 
 ## Conclusion
 ---
 #### Part 1: U.S. Sites
+Within the first part of the study, we sought to create machine learning models for predicting PM2.5 values at sites across the United States.  After partitioning the sites by EPA regions, our regional machine model proved to be effective for predicting PM2.5 values for both existing and new sites and performed significantly better than the standard forecasting method. When considering model accuracy across a temporal and spatial scale, our models were found to have performed consistently across seasonal and diurinal distributions, but inconsistently across geographic distributions.
+
 #### Part 2: Embassy Sites
+Given the successes of our United States models, we sought to replicate our previous methods and create machine learning models predicting PM2.5 values at overseas U.S. embassy. However, rather than grouping embassy sites into geographical regions, a model is created and tuned for each embassy site. Daily data of aerosol and meterological features are regularily collected and fed into pre-trained models, producing three-day PM2.5 predictions at each embassy site. Finally, prediction values are uploaded into an internal database and viewable within a web interface hosted on Amazon EC2. To access the website, click <a href="http://ec2-18-208-186-74.compute-1.amazonaws.com:8081/"> here </a>. Within the web interface, users have the option of comparing model predictions, accessing historical observations & predictions, and 
+
 #### Part 3: Overseas Sites
+Similar methodologies were conducted to train models for predicting PM2.5 values at different geographical regions, including: India, Thailand, Japan, amongst others.  In particular, within Japan, an ETL pipeline was implemented that procured and fed hourly feature data into our training models and outputted an animation of predicted PM2.5 day for a dya.
