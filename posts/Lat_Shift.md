@@ -22,4 +22,4 @@ Past methods for analyzing PFT distribution have typically utilized field-collec
 
 ## Study Area
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Lat_Shift/Training_Testing_Sites.PNG?raw=true"></p>
-<p><i>The Great Plains Ecoregion: Training Sites (left) and Testing Sites (right)</i></p>
+<p align = "center"><i>The Great Plains Ecoregion: Training Sites (left) and Testing Sites (right)</i></p>
