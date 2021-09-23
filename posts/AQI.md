@@ -1,6 +1,6 @@
 # Forecasting AQI Values across U.S. Embassy Sites and EPA Regions
 ---
-**Author**: Paul Lin (Mentors: Pawan Gupta - Universities Space Research Association)
+**Author**: Paul Lin (Mentor: Pawan Gupta - Universities Space Research Association)
 
 **Date**: August 2021
 
