@@ -5,9 +5,6 @@
 ### [Latitudinal Shifts of Plant Functional Types within the Great Plains](/posts/Lat_Shift.md)
 <p align = "center"><img src="images/Lat_Shift/yearly_trans.gif?raw=true"></p>
 
-### [Forecasting PM2.5 & AQI Values across U.S. Embassy Sites and EPA Regions](/posts/AQI.md)
-<center><img src="images/AQI/model3_time_series.png"/></center>
-
 ## Web Applications
 ---
 ### [Tracking Erroneous Measurements for Earth's Planetary Operations](/posts/TEMPO.md)
