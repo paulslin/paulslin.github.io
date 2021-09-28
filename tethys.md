@@ -6,6 +6,7 @@
 - <a href="http://docs.tethysplatform.org/en/stable/tethys_sdk/gizmos.html">Gizmo</a>
 - <a href="http://docs.tethysplatform.org/en/stable/tethys_sdk/workspaces.html">Workspace API</a>
 - <a href="http://docs.tethysplatform.org/en/stable/tethys_sdk/tethys_services/persistent_store.html">Persistent Storage API</a>
+- <a href="http://docs.tethysplatform.org/en/stable/tethys_sdk/permissions.html">Permissions API</a>
 
 ## Django Templates
 ---
@@ -40,3 +41,7 @@ Each class in an SQLAlchemy data model defines a table in the database. The mode
 The class defines seven other properties that are instances of SQLAlchemy `Column` class: id, latitude, longitude, name, owner, river, date_built. These properties define the columns of the "dams" table. The column type and options are defined by the arguments passed to the Column class. For example, the latitude column is of type `Float` while the id column is of type `Integer`. The `id` column is flagged as the primary key for the table. IDs will be generated for each object when they are committed.
 
 This class is not only used to define the tables for your persistent store, it is also used to create new entries and query the database.
+### Visualizing
+- <a href="http://docs.tethysplatform.org/en/stable/tethys_sdk/gizmos/plotly_view.html">Plotly View</a>
+- <a href="http://docs.tethysplatform.org/en/stable/tethys_sdk/gizmos/bokeh_view.html">Bokeh View</a>
+- <a href="http://docs.tethysplatform.org/en/stable/tethys_sdk/gizmos/plot_view.html">Plot View API</a>
