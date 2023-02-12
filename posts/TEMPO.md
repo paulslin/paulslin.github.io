@@ -22,10 +22,12 @@ Synergizing Python packages (cartopy, netCDF4, h5Py) and front-end web developme
 ## Features
 ---
 ### Erroneous Value Detection
-<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/error_masking.PNG?raw=true"></p>
+
 ### Administrative & Physical Layer Overlays
-<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/layering.PNG?raw=true"></p>
+
 ### Extended Features
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/layering.PNG?raw=true"></p>
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/error_masking.PNG?raw=true"></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/features.PNG?raw=true"></p>
 
 ## Discussion
