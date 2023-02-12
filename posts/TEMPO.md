@@ -29,6 +29,16 @@ Synergizing Python packages (cartopy, netCDF4, h5Py) and front-end web developme
 - **Extended Features**
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/features.PNG?raw=true"></p>
 
+<!---
+## Reporting Options
+- **Report by Day:** analyze error values of multiple fields across a given day
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/day_report.png?raw=true"></p> 
+- **Report by Field:** analyze error values of a single field across multiple days
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/field_report.png?raw=true"></p>
+- **Report by File:** analyze error values of multiple fields from multiple days across a single file
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/TEMPO/file_report.png?raw=true"></p>
+--->
+
 ## Discussion
 ---
 Although TEMPO was originally intended as an operations-oriented service to identify errors in data ingestion and transformation, the GMAO team recognized the potential of TEMPO's application for climate modelling and analysis purposes. Due to TEMPO's capabilities for identifying data outliers, TEMPO is particularly useful for identifying extreme weather events. For example, after analyzing several Earth Science datasets, TEMPO identified a range breach for horizontal wind velocity (u-wind) and ozone levels that indicated unusually strong high Polar Westerly zonal wind velocity for July 22, 2019.
