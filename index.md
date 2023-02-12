@@ -8,6 +8,11 @@
 ### [Forecasting AQI Values across U.S. Embassy Sites and EPA Regions](/posts/AQI.md)
 <p align = "center"><img src="images/AQI/japan2.gif?raw=true"></p>
 
+## GIS
+---
+### [Selected GIS Works](/posts/GIS_works.md)
+<p align = "center"><img src="images/GIS/election_thumbnail.PNG?raw=true"></p>
+
 ## Web Applications
 ---
 ### [Tracking Erroneous Measurements for Earth's Planetary Operations](/posts/TEMPO.md)
@@ -16,8 +21,5 @@
 ### [PennBook](/posts/PennBook.md)
 <p align = "center"><img src="images/PennBook/profile.PNG?raw=true"></p>
 
-## GIS
----
-### [Selected GIS Works](/posts/GIS_works.md)
-<p align = "center"><img src="images/GIS/election_thumbnail.PNG?raw=true"></p>
+
 
