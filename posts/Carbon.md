@@ -34,3 +34,7 @@ The site provides multiple capabilities for clipping data into user's selected a
 <p align = "center"><i>Admin Border Options: countries, provinces, pilot countries</i></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Carbon/clip_custom.png?raw=true"></p>
 <p align = "center"><i>Custom Border Options: shapefile, drawing, Google Earth Engine asset</i></p>
+
+### Plotting Capabilities
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Carbon/map_plots.png?raw=true"></p>
+<p align = "center"><i>Plots map visualization and land cover trends with options to filter by dates and area of interest</i></p>
