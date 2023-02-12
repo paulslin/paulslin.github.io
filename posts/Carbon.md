@@ -1,6 +1,7 @@
 # Forecasting AQI Values across U.S. Embassy Sites and EPA Regions
 ---
-**Site Designer**: Paul Lin (In Collaboration with Christine Evans, Emil Cherrington, Billy Ashmall, Francisco Delgado from United Space Research Association)
+**Site Designer**: Paul Lin
+**Collaborators**: Christine Evans, Emil Cherrington, Billy Ashmall, and Francisco Delgado (United Space Research Association)
 
 **Date**: December 2021
 
@@ -23,6 +24,13 @@ The website's area of interests are 11 pilot countries paterned with SERVIR with
 
 ## Site Overview
 ---
-#### Home Page
+### Home Page
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Carbon/about.png?raw=true"></p>
 <p align = "center"><i>Home Page with overview of project, application usage, and supported datasets</i></p>
+
+### Clipping Capabilties
+The site provides multiple capabilities for clipping data into user's selected area of interest.
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Carbon/clip_admin.png?raw=true"></p>
+<p align = "center"><i>Admin Border Options: countries, provinces, pilot countries</i></p>
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Carbon/clip_custom.png?raw=true"></p>
+<p align = "center"><i>Custom Border Options: shapefile, drawing, Google Earth Engine asset</i></p>
