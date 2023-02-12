@@ -6,7 +6,7 @@
 <p align = "center"><img src="images/Lat_Shift/yearly_trans.gif?raw=true"></p>
 
 ### [Forecasting AQI Values across U.S. Embassy Sites and EPA Regions](/posts/AQI.md)
-<p align = "center"><img src="images/AQI/japan.gif?raw=true"></p>
+<p align = "center"><img src="images/AQI/japan2.gif?raw=true"></p>
 
 ## Web Applications
 ---
