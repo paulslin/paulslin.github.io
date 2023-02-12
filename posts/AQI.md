@@ -113,4 +113,4 @@ Given the successes of our United States models, we sought to replicate our prev
 
 #### Part 3: Overseas Sites
 In the last section, the same methodologies were replicated for overseas regions, including India, Thailand, and Japan. Within Japan, an ETL pipeline was also implemented to regularly procure and feed Merra2 feature data into our training models and output an animation of predicted PM2.5 for the day.
-<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/AQI/japan.gif?raw=true"></p>
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/AQI/japan2.gif?raw=true"></p>
