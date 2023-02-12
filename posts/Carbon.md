@@ -30,7 +30,7 @@ The website's area of interests are 11 pilot countries paterned with SERVIR with
 
 ### Clipping Capabilties
 The site provides multiple capabilities for clipping data into user's selected area of interest.
-<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Carbon/clip_admin.png?raw=true"></p>
+<p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Carbon/clip_admin2.png?raw=true"></p>
 <p align = "center"><i>Admin Border Options: countries, provinces, pilot countries</i></p>
 <p align = "center"><img src="https://github.com/paulslin/paulslin.github.io/blob/main/images/Carbon/clip_custom.png?raw=true"></p>
 <p align = "center"><i>Custom Border Options: shapefile, drawing, Google Earth Engine asset</i></p>
