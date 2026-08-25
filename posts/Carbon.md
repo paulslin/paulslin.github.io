@@ -1,7 +1,7 @@
 # S-CAP Carbon Visualization in Developing Countries
 ---
 **Site Designer**: Paul Lin
-**Collaborators**: Christine Evans, Emil Cherrington, Billy Ashmall, and Francisco Delgado (University Space Research Association)
+**Collaborators**: Christine Evans, Emil Cherrington, Billy Ashmall, and Francisco Delgado (Universities Space Research Association)
 
 **Date**: December 2021
 
